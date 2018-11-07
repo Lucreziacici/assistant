@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/success/success",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b2d46",
+    "navigationBarTitleText": "绑定淘宝id",
+    "navigationBarTextStyle":"light"
+  }
+}

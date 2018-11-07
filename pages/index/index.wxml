@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view wx:if="{{load}}" class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class='personinfo'>
+    <!-- <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class='accredit'>授权</button> -->
+    <view  class='headimg'>
+       <open-data class='personinfo-image' type="userAvatarUrl"></open-data>
+       <!-- <image wx:if="{{userInfo.avatarUrl}}" src='{{userInfo.avatarUrl}}'></image>  -->
+       <!-- <image wx:else src='../../images/head.png'></image> -->
+    </view>
+    <text class='text1'>请提供您的淘宝id</text>
+     <text  class='text2'>参加订阅盒子抽奖吧 </text> 
+  </view>
+  <view class='phonebox'>
+    <view class='inputbox'>
+      <image src="/images/phone.png"></image>
+      <input placeholder-class="phcolor" type="text" bindinput="bindKeyInput" value='{{phonenum}}' placeholder='输入淘宝id'></input>
+      <!-- <button open-type="getPhoneNumber"  class="getnumber" bindgetphonenumber="getPhoneNumber">获取手机号 </button> -->
+    </view>
+    <view style="display: flex;justify-content: center;margin: 80rpx 0 0 0;" >
+      <view class='buttonbox' hover-class="none">
+        <!-- <button animation="{{animationData}}" bindtap='commit' hover-class="none" >绑定</button> -->
+             <button animation="{{animationData}}" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" hover-class="none" >绑定</button>
+      </view>
+    </view>
+
+  </view>
+</view>

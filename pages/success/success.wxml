@@ -1,0 +1,5 @@
+<!--pages/success/success.wxml-->
+<!-- <text>提交成功</text> -->
+<image src='../../images/success.png'></image>
+<button class='button1' hover-class="none">提交成功</button>
+<button hover-class="none" bindtap='changeinfo'>修改淘宝id</button>
